@@ -23,11 +23,13 @@ import seaborn as sns
 
 ## Linear Regression Assumptions
 
-Remember that linear regression operates under various assumptions including that the dependent variable, y,  can be decomposed into a linear combination of the independent features, X. Furthermore, the statistical underpinnings assume that these variables are normally distributed. As a result, if a feature is not approximately normal, you often wish to transform it into a normal variable before proceeding with fitting the regression model.
+Remember that linear regression operates under various assumptions including that the dependent variable can be decomposed into a linear combination of the independent features. Additionally, data should be homoscedastic and the residuals should follow a normal distribution.
+
+One thing we briefly touched upon previously is the **distributions of the predictors**. In previous labs, you have looked at these distributions to have an understanding of what the distributions look like. In fact, you'll often find that having the data more normally distributed will benefit your model and model performance in general. So while normality of the predictors is not a mandatory assumption, having (approximately) normal featured may be helpful for your model!
 
 ## A Model Using the Raw Features
 
-While you should check that the assumptions of linear regression are met, let's first look at a niave approach that does not follow best practices. Afterwards, you'll take a look at how to identify when to use log transformations and validate the improvement that they provide for the model.
+To prove the point, let's look at a model using raw inputs that are not approximately normal. Afterwards, you'll take a look at how to identify when you can **transform your inputs** (log transformations) and validate the improvement that they provide for the model.
 
 
 ```python
