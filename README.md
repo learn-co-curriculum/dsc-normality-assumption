@@ -206,7 +206,7 @@ model.summary()
 
 ## Checking Variable Distributions
 
-You do have an initial model displayed above, but this can be improved. The first step you should take prior to simply fitt
+You do have an initial model displayed above, but this can be improved. The first step you should take prior to simply fitting your model is to see how each of the variables are related to one another.
 
 
 ```python
