@@ -219,7 +219,7 @@ pd.plotting.scatter_matrix(data[x_cols], figsize=(10,12));
 
 ## Logarithmic Functions
 
-As you'll see below, one common option for transforming non-normal variavble distributions is to try applying a logarithmic function and observe its impact of the distribution. As a helpful math review, let's take a look at a logarithmic curve. (Also remember that you can't take the logarithm of zero nor a negative number.)
+As you'll see below, one common option for transforming non-normal variable distributions is to try applying a logarithmic function and observe its impact of the distribution. As a helpful math review, let's take a look at a logarithmic curve. (Also remember that you can't take the logarithm of zero nor a negative number.)
 
 
 ```python
