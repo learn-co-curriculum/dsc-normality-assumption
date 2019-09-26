@@ -33,7 +33,7 @@ To prove the point, let's look at a model using raw inputs that are not approxim
 
 
 ```python
-data = pd.read_csv("auto-mpg.csv")
+data = pd.read_csv('auto-mpg.csv')
 data.head()
 ```
 
@@ -126,8 +126,7 @@ from statsmodels.formula.api import ols
 
 ```python
 outcome = 'mpg'
-x_cols = ['displacement', 'horsepower', 'weight',
-       'acceleration']
+x_cols = ['displacement', 'horsepower', 'weight', 'acceleration']
 predictors = '+'.join(x_cols)
 formula = outcome + "~" + predictors
 model = ols(formula=formula, data=data).fit()
@@ -149,10 +148,10 @@ model.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   233.4</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 07 Mar 2019</td> <th>  Prob (F-statistic):</th> <td>9.63e-102</td>
+  <th>Date:</th>             <td>Thu, 26 Sep 2019</td> <th>  Prob (F-statistic):</th> <td>9.63e-102</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>10:51:41</td>     <th>  Log-Likelihood:    </th> <td> -1120.6</td> 
+  <th>Time:</th>                 <td>10:10:32</td>     <th>  Log-Likelihood:    </th> <td> -1120.6</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2251.</td> 
@@ -225,22 +224,15 @@ As you'll see below, one common option for transforming non-normal variable dist
 ```python
 x = np.linspace(start=-100, stop=100, num=10**3)
 y = np.log(x)
-plt.plot(x, y)
+plt.plot(x, y);
 ```
 
-    /Users/matthew.mitchell/anaconda3/lib/python3.6/site-packages/ipykernel_launcher.py:2: RuntimeWarning: invalid value encountered in log
+    //anaconda3/lib/python3.7/site-packages/ipykernel_launcher.py:2: RuntimeWarning: invalid value encountered in log
       
 
 
 
-
-
-    [<matplotlib.lines.Line2D at 0x1a160bb240>]
-
-
-
-
-![png](index_files/index_10_2.png)
+![png](index_files/index_10_1.png)
 
 
 ## Transforming Non-Normal Features
@@ -262,8 +254,7 @@ pd.plotting.scatter_matrix(data[x_cols], figsize=(10,12));
 
 ```python
 outcome = 'mpg'
-x_cols = ['displacement', 'horsepower', 'weight',
-       'acceleration']
+x_cols = ['displacement', 'horsepower', 'weight', 'acceleration']
 predictors = '+'.join(x_cols)
 formula = outcome + "~" + predictors
 model = ols(formula=formula, data=data).fit()
@@ -285,10 +276,10 @@ model.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   286.5</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 07 Mar 2019</td> <th>  Prob (F-statistic):</th> <td>2.98e-114</td>
+  <th>Date:</th>             <td>Thu, 26 Sep 2019</td> <th>  Prob (F-statistic):</th> <td>2.98e-114</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>11:12:09</td>     <th>  Log-Likelihood:    </th> <td> -1091.4</td> 
+  <th>Time:</th>                 <td>10:10:34</td>     <th>  Log-Likelihood:    </th> <td> -1091.4</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2193.</td> 
@@ -342,7 +333,7 @@ model.summary()
 
 ## Observations
 
-While not dramatic, you can observe that simply by transforming non-normally distributed features using log transformations, we have increase our $R^2$ value of the model from 0.707 to 0.748. 
+While not dramatic, you can observe that simply by transforming non-normally distributed features using log transformations, we have increased our $R^2$ value of the model from 0.707 to 0.748. 
 
 ## Summary
 
