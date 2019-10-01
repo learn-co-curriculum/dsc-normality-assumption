@@ -128,7 +128,7 @@ from statsmodels.formula.api import ols
 outcome = 'mpg'
 x_cols = ['displacement', 'horsepower', 'weight', 'acceleration']
 predictors = '+'.join(x_cols)
-formula = outcome + "~" + predictors
+formula = outcome + '~' + predictors
 model = ols(formula=formula, data=data).fit()
 model.summary()
 ```
@@ -148,10 +148,10 @@ model.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   233.4</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 26 Sep 2019</td> <th>  Prob (F-statistic):</th> <td>9.63e-102</td>
+  <th>Date:</th>             <td>Tue, 01 Oct 2019</td> <th>  Prob (F-statistic):</th> <td>9.63e-102</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>10:10:32</td>     <th>  Log-Likelihood:    </th> <td> -1120.6</td> 
+  <th>Time:</th>                 <td>13:42:44</td>     <th>  Log-Likelihood:    </th> <td> -1120.6</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2251.</td> 
@@ -256,7 +256,7 @@ pd.plotting.scatter_matrix(data[x_cols], figsize=(10,12));
 outcome = 'mpg'
 x_cols = ['displacement', 'horsepower', 'weight', 'acceleration']
 predictors = '+'.join(x_cols)
-formula = outcome + "~" + predictors
+formula = outcome + '~' + predictors
 model = ols(formula=formula, data=data).fit()
 model.summary()
 ```
@@ -276,10 +276,10 @@ model.summary()
   <th>Method:</th>             <td>Least Squares</td>  <th>  F-statistic:       </th> <td>   286.5</td> 
 </tr>
 <tr>
-  <th>Date:</th>             <td>Thu, 26 Sep 2019</td> <th>  Prob (F-statistic):</th> <td>2.98e-114</td>
+  <th>Date:</th>             <td>Tue, 01 Oct 2019</td> <th>  Prob (F-statistic):</th> <td>2.98e-114</td>
 </tr>
 <tr>
-  <th>Time:</th>                 <td>10:10:34</td>     <th>  Log-Likelihood:    </th> <td> -1091.4</td> 
+  <th>Time:</th>                 <td>13:42:46</td>     <th>  Log-Likelihood:    </th> <td> -1091.4</td> 
 </tr>
 <tr>
   <th>No. Observations:</th>      <td>   392</td>      <th>  AIC:               </th> <td>   2193.</td> 
