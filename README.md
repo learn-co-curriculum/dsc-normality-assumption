@@ -3,14 +3,13 @@
 
 ## Introduction
 
-In this lesson you will take a look at logarithmic transformations and when to apply them to features of a dataset. This will then become an effective technique you can use to improve the performance of linear regression models. Remember, linear regression models are meant to determine optimal coefficients in order to decompose an output variable as the linear combination of features. Transforming these initial features to have certain properties such as normality will improve the regression algorithms predictive performance.
+In this lesson, you will take a look at logarithmic transformations and when to apply them to features of a dataset. This will then become an effective technique you can use to improve the performance of linear regression models. Remember, linear regression models are meant to determine optimal coefficients in order to decompose an output variable as the linear combination of features. Transforming these initial features to have certain properties such as normality will improve the regression algorithms predictive performance.
 
 ## Objectives
 
 You will be able to:
-
-* Determine which features of a dataset might be appropriate for log transformations
-* Apply logarithmic transformations to features of a dataset
+* Identify if it is necessary to perform log transformations on a set of features
+* Perform log transformations on different features of a dataset
 
 
 ```python
@@ -337,4 +336,4 @@ While not dramatic, you can observe that simply by transforming non-normally dis
 
 ## Summary
 
-In this lesson, you got a quick review of logarithmic functions, and saw how they can be used to transform non normal distributions which can improve the performance of linear regression models.
+In this lesson, you got a quick review of logarithmic functions, and saw how they can be used to transform non-normal distributions which can improve the performance of linear regression models.
