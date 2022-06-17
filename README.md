@@ -1,4 +1,4 @@
-## The Normality Assumption
+# The Normality Assumption
 
 ## Introduction
 
