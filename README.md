@@ -49,7 +49,7 @@ The two main ways of visualizing normality are ***histograms*** (like the plot a
 
 ### Histograms
 
-We have already seen quite a few histograms at this point. They show the distribution of a single variable by showing the value of that variable along the x-axis and the counts of that variable that fall into a set of bins along the y-axis.
+Histograms show the distribution of a single variable by showing the value of that variable along the x-axis and the counts of that variable that fall into a set of bins along the y-axis.
 
 You are looking for a histogram shape that resembles the plot above, a "bell curve" shape.
 
@@ -81,7 +81,7 @@ As you can see, the residuals from the actual model are a bit skewed, not quite 
 
 In statistics, a ***Q-Q (quantile-quantile) plot*** is a probability plot, which is a graphical method for comparing two probability distributions by plotting their quantiles against each other.
 
-We will use the Q-Q plot to compare the _actual_ data to _theoretical_ quantiles. In this case the theoretical quantiles would be the normal distribution (using the SciPy `stats.norm`).
+We will use the Q-Q plot to compare the _actual_ data to _theoretical_ quantiles. In this case the theoretical quantiles would be the normal distribution (using the SciPy `stats.norm` function).
 
 When inspecting a Q-Q plot you are looking for the data points to follow the diagonal line as closely as possible.
 
@@ -561,7 +561,9 @@ print(f"Log transformed model: {normal_ad(log_results.resid)[1]}")
     Log transformed model: 0.08748354038810166
 
 
-Keep in mind that log transformations are fundamentally changing the nature of the linear regression model to be multiplicative with respect to the original units rather than additive. So there may be a trade-off between model interpretability and meeting the normality assumption.
+Note that because the different tests assess normality in different ways, you might make different decisions depending on the statistic you are using.
+
+Also keep in mind that log transformations are fundamentally changing the nature of the linear regression model to be multiplicative with respect to the original units rather than additive. So there may be a trade-off between model interpretability and meeting the normality assumption.
 
 ## Summary
 
